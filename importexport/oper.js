@@ -11,9 +11,9 @@ const multiply = (a,b) => {
     return result;
 }
 
-const div = (a,b)=>{
+const div = (a,b) => {
     return a / b;
 }
 
-const name = "ajay"
+const name = "ajay";
 module.exports = {add, sub, multiply, div, name};
