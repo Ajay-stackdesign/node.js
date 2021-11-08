@@ -1,0 +1,33 @@
+{
+    "albums": [
+      {
+        "album_type": "",
+        "artists": [
+          null
+        ],
+        "available_markets": [
+          null
+        ],
+        "copyrights": [
+          null
+        ],
+        "external_ids": {},
+        "external_urls": {},
+        "genres": [
+          null
+        ],
+        "href": "",
+        "id": "",
+        "images": [
+          null
+        ],
+        "name": "",
+        "popularity": 0,
+        "release_date": "",
+        "release_date_precision": "",
+        "tracks": {},
+        "type": "",
+        "uri": ""
+      }
+    ]
+  }
