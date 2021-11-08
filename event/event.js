@@ -33,6 +33,7 @@
 
 // parameters passing
 
+const { timeStamp } = require("console");
 const events = require("events")
 
 const event = new events.EventEmitter();
@@ -42,6 +43,7 @@ const event = new events.EventEmitter();
 event.on("checkMyName",(sc,ss) => {
     console.log("my name is ajay");
     console.log(`my status code is ${sc} and satisfied is ${ss}`);
-})
-
+});
 event.emit("checkMyName", 200,"ok");
+
+// with same events we use multiple time
