@@ -56,7 +56,7 @@ fs.rename("text.txt","mytext..txt",((err,data) => {
     console.log(data)
     console.log(err)
 }))
-fs.unlink("mytext.txt",((err,data) => {
+fs.unlink("mytext..txt",((err,data) => {
     console.log(err)
 }))
 
