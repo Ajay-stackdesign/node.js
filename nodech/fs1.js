@@ -21,14 +21,14 @@
 
 // fs.unlinkSync("ajay/mybio.txt") // deleting the file
 // fs.rmdirSync("ajay") //removing the folder.
-const fs = require("fs")
+// const fs = require("fs")
 
-// fs.mkdirSync("ajay")
-fs.writeFileSync("text.txt","hello world how are you")
-fs.appendFileSync("text.txt","i have to complete till last week of november");
-const read = fs.readFileSync("text.txt","utf8")
-console.log(read.toString())
+// // fs.mkdirSync("ajay")
+// fs.writeFileSync("text.txt","hello world how are you")
+// fs.appendFileSync("text.txt","i have to complete till last week of november");
+// const read = fs.readFileSync("text.txt","utf8")
+// console.log(read.toString())
 
-fs.renameSync("text.txt","mytext.txt")
-fs.unlinkSync("mytext.txt")
-fs.rmdirSync("ajay")
+// fs.renameSync("text.txt","mytext.txt")
+// fs.unlinkSync("mytext.txt")
+// fs.rmdirSync("ajay")
