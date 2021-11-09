@@ -6,13 +6,9 @@ const data = {
     surname : "sahani",
     school : "SDV"
 }
-
-
-
-
 const jsondata = JSON.stringify(data);
 
-fs.writeFile("json1.json", jsondata, (err) => {
+fs.writeFile("json1.json", jsondata, (err,data) => {
     console.log("done");
     console.log("file is created")
 })
