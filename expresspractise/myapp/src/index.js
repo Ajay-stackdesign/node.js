@@ -1,13 +1,37 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const hbs = require("hbs");
 
-const pathing = path.join(__dirname,"../about")
+const pathing = path.join(__dirname,"../public")//path for public folder
 // console.log(__dirname)
+const templatePath = path.join(__dirname,"../templates")//path for hbs folder
+const partialPath = path.join(__dirname,"../templates/partials")
+
+app.set("view engine","hbs");//hbs view engine
+app.set("views",templatePath); //changing the folder in hbs 
+// app.set()
+//app.use(express.static(pathing));//static ways to add a data
+hbs.registerPartials(partialPath);
+
+app.get("/",(req,res) => {
+    res.render('C:/Users/Ajay Sahni/Desktop/AjayGIt/node.js/node1.js/expresspractise/templates/views/index.hbs',{
+        channelName : "ajay"
+    });//dynamic way to add a data;
+})
+
 app.use(express.static(pathing));
 
 app.get("/",(req,res) => {
     res.send("hello here is your home page")
+})
+
+app.get("/about",(req,res) => {
+    res.render("C:/Users/Ajay Sahni/Desktop/AjayGIt/node.js/node1.js/expresspractise/templates/views/about.hbs")
+})//dynamic ways to add a data
+
+app.get("/contact",(req,res) => {
+    res.render("C:/Users/Ajay Sahni/Desktop/AjayGIt/node.js/node1.js/expresspractise/templates/viewscontact.hbs")
 })
 
 app.get("/about",(req,res) => {
