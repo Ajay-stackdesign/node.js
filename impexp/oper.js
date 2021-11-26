@@ -9,4 +9,4 @@ const sub = (a,b) => {
 
 const name = "ajay";
 
-module.exports = {add,sub,name}
+module.exports = { add,sub,name }
