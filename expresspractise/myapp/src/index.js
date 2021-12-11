@@ -19,6 +19,7 @@ app.get("/",(req,res) => {
         channelName : "ajay"
     });//dynamic way to add a data;
 })
+// C:\Users\Ajay Sahni\Desktop\AjayGIt\node.js\node1.js\expresspractise\myapp\templates\views\index.hbs
 
 app.use(express.static(pathing));
 
@@ -64,4 +65,5 @@ app.get("*",(req,res) => {
 app.listen(8080,"127.0.0.1",() => {
     console.log("listening your response on 8080 port")
 });
+
 
