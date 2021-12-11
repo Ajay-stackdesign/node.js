@@ -64,3 +64,6 @@ app.listen(8000,"127.0.0.1",() => {
 // post - create data
 // put - update data
 // delete - delete data
+
+// C:\Users\Ajay Sahni\AppData\Roaming\Python\Python310\Scripts' which is not on PATH.
+// Fatal error in launcher: Unable to create process using '"C:\Python310\python.exe"  "C:\Program Files\Python310\Scripts\pip.exe
